@@ -110,6 +110,9 @@
 					//setDefaultDate: elem.val() ? moment.unix(elem.val()).format("YYYY-MM-DD") :
 				}));
 
+			  // Store picker so recoverable and configurable.
+			  elem.pikaday = picker;
+			  
 				if(elem.val()) {
 					picker.setMoment(moment.unix(elem.val()));
 				}
