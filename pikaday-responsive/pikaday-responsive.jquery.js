@@ -191,7 +191,7 @@
 				var todayBtn = $("<button class='pikaday-today-btn' ></button>");
 				todayBtn.html(settings.todayButtonText);
 				container.append(todayBtn);
-				todayBtn.click(function() {
+				todayBtn.click(function(e) {
 					self.gotoToday();
 					e.preventDefault();
 					return false;
